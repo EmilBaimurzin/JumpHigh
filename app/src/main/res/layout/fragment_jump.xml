@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background02"
+    android:layout_height="match_parent">
+    
+    <FrameLayout
+        android:id="@+id/symbolLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <ImageView
+            android:src="@drawable/symbol01"
+            android:id="@+id/symbol"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+        
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/platformLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.jump.game.core.library.CustomImageButton
+        android:id="@+id/home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/home"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.jump.game.core.library.CustomImageButton
+        android:id="@+id/restart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/restart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/score"
+        style="@style/BasicText"
+        tools:text="2000"
+        android:textSize="18sp"
+        android:paddingTop="2dp"
+        android:background="@drawable/score"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/home" />
+
+    <ImageView
+        android:rotation="90"
+        android:id="@+id/buttonUp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/arrow01"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/buttonLeft"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/arrow01"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:rotation="180"
+        android:id="@+id/buttonRight"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/arrow01"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:layout_marginBottom="70dp"
+        android:id="@+id/platform1Y"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonUp" />
+
+    <View
+        android:id="@+id/platform2Y"
+        android:layout_marginBottom="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/platform1Y" />
+
+    <View
+        android:id="@+id/platform3Y"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/platform2Y" />
+
+    <View
+        android:id="@+id/platform4Y"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/platform3Y" />
+
+    <View
+        android:id="@+id/platform5Y"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/platform4Y" />
+
+    <View
+        android:id="@+id/platform6Y"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/platform5Y" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

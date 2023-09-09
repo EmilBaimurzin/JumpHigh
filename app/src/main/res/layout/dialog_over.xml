@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/gameover"
+        android:layout_width="300dp"
+        android:layout_height="330dp">
+
+        <TextView
+            android:id="@+id/score"
+            style="@style/BasicText"
+            tools:text="2000"
+            android:textSize="18sp"
+            android:paddingTop="2dp"
+            android:background="@drawable/score"
+            android:layout_width="100dp"
+            android:layout_marginTop="135dp"
+            android:layout_height="50dp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+
+            <com.jump.game.core.library.CustomImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/home"
+                android:id="@+id/home"/>
+
+            <com.jump.game.core.library.CustomImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/restart"
+                android:id="@+id/restart"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

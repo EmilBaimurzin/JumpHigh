@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background02"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/foreground2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/background03"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="350dp"
+        android:layout_height="390dp"
+        android:background="@drawable/options02"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/symbol2"
+        android:src="@drawable/symbol02"
+        android:layout_width="70dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+    <ImageView
+        android:id="@+id/symbol1"
+        android:layout_width="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/symbol01"
+        app:layout_constraintEnd_toStartOf="@+id/symbol2"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+    <ImageView
+        android:id="@+id/symbol3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/symbol03"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toEndOf="@+id/symbol2"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+    <ImageView
+        android:id="@+id/symbol5"
+        android:src="@drawable/symbol05"
+        android:layout_width="70dp"
+        android:layout_marginTop="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/symbol2" />
+
+    <ImageView
+        android:id="@+id/symbol4"
+        android:layout_width="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/symbol04"
+        app:layout_constraintEnd_toStartOf="@+id/symbol2"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/symbol2" />
+
+    <ImageView
+        android:id="@+id/symbol6"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/symbol06"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toEndOf="@+id/symbol2"
+        app:layout_constraintTop_toBottomOf="@+id/symbol2" />
+
+    <com.jump.game.core.library.CustomImageButton
+        android:id="@+id/select2"
+        android:layout_width="70dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/select"
+        app:layout_constraintEnd_toEndOf="@+id/symbol2"
+        app:layout_constraintStart_toStartOf="@+id/symbol2"
+        app:layout_constraintTop_toBottomOf="@+id/symbol2" />
+
+    <com.jump.game.core.library.CustomImageButton
+        android:id="@+id/select3"
+        android:layout_width="70dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/select"
+        app:layout_constraintEnd_toEndOf="@+id/symbol3"
+        app:layout_constraintStart_toStartOf="@+id/symbol3"
+        app:layout_constraintTop_toBottomOf="@+id/symbol3" />
+
+    <com.jump.game.core.library.CustomImageButton
+        android:id="@+id/select1"
+        android:layout_width="70dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/select"
+        app:layout_constraintEnd_toEndOf="@+id/symbol1"
+        app:layout_constraintStart_toStartOf="@+id/symbol1"
+        app:layout_constraintTop_toBottomOf="@+id/symbol1" />
+
+    <com.jump.game.core.library.CustomImageButton
+        android:id="@+id/select4"
+        android:layout_width="70dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/select"
+        app:layout_constraintEnd_toEndOf="@+id/symbol4"
+        app:layout_constraintStart_toStartOf="@+id/symbol4"
+        app:layout_constraintTop_toBottomOf="@+id/symbol4" />
+
+    <com.jump.game.core.library.CustomImageButton
+        android:id="@+id/select5"
+        android:layout_width="70dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/select"
+        app:layout_constraintEnd_toEndOf="@+id/symbol5"
+        app:layout_constraintStart_toStartOf="@+id/symbol5"
+        app:layout_constraintTop_toBottomOf="@+id/symbol5" />
+
+    <com.jump.game.core.library.CustomImageButton
+        android:id="@+id/select6"
+        android:layout_width="70dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/select"
+        app:layout_constraintEnd_toEndOf="@+id/symbol6"
+        app:layout_constraintStart_toStartOf="@+id/symbol6"
+        app:layout_constraintTop_toBottomOf="@+id/symbol6" />
+
+    <ImageView
+        android:id="@+id/options"
+        android:layout_width="210dp"
+        android:layout_height="100dp"
+        android:src="@drawable/options"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ok"
+        android:layout_width="150dp"
+        android:layout_marginBottom="-15dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ok"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

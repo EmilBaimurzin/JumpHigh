@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentMain">
+
+    <fragment
+        android:id="@+id/fragmentMain"
+        android:name="com.jump.game.ui.lobby.FragmentLobby"
+        android:label="FragmentMain" >
+        <action
+            android:id="@+id/action_fragmentMain_to_fragmentJump"
+            app:destination="@id/fragmentJump" />
+        <action
+            android:id="@+id/action_fragmentMain_to_fragmentOptions"
+            app:destination="@id/fragmentOptions" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentJump"
+        android:name="com.jump.game.ui.jump.FragmentJump"
+        android:label="FragmentJump" >
+        <action
+            android:id="@+id/action_fragmentJump_to_dialogOver"
+            app:destination="@id/dialogOver" />
+    </fragment>
+    <dialog
+        android:id="@+id/dialogOver"
+        android:name="com.jump.game.ui.dialogs.DialogOver"
+        android:label="DialogOver" >
+        <argument
+            android:name="scores"
+            app:argType="integer" />
+    </dialog>
+    <fragment
+        android:id="@+id/fragmentOptions"
+        android:name="com.jump.game.ui.options.FragmentOptions"
+        android:label="FragmentOptions" />
+</navigation>
